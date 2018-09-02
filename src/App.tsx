@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import './App.css';
 
 interface Props {
   name: string
@@ -7,7 +8,7 @@ interface Props {
 export default class App extends Component<Props> {
   render({ name }: Props) {
     return (
-      <div>Hello {name}! This is a Preact app.</div>
+      <p>Hello {name}! This is a Preact app.</p>
     );
   }
 }
